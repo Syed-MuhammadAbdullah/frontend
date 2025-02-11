@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* 🔥 Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0em;
+  z-index: 1000;
+  border: none
+}
+
+
+.help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  /* Circular shape */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  /* ✅ Stays in place when scrolling */
+  bottom: 20px;
+  /* ✅ Distance from the bottom */
+  right: 20px;
+  /* ✅ Distance from the right */
+  z-index: 1000;
+  /* ✅ Ensures it's above other elements */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.help:hover {
+  transform: scale(1.1);
+  /* ✅ Slightly enlarges on hover */
+}
+
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: underline;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: yellow;
+  transform: scale(1.1);
+}
+
+.btn {
+  background: white;
+  color: #ff416c;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background: yellow;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* 🌟 Hero Section */
+.hero {
+  height: 70vh;
+  width: 100vw;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  padding: 20px;
+}
+
+
+.hero h1 {
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* 🏆 Services Section */
+.services {
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.service-cards {
+  display: flex;
+  cursor: pointer;
+  gap: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 8px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.06);
+}
+ #footer
+ {
+  text-align: center;
+  color: white;
+  background-color: #222;
+ }
+
+/* 📞 Contact Section */
+.contact {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 50px 5%;
+}
+
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact button {
+  background: #ff416c;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact button:hover {
+  background: yellow;
+  color: black;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: row; /* ✅ Keep items in a row */
+    align-items: center;
+    padding: 10px 4%; /* ✅ Reduce padding for smaller screens */
+    
+  }
+
+  .logo {
+    font-size: 12px; /* ✅ Reduce logo size */
+  }
+
+  nav {
+    flex-direction: row; /* ✅ Keep navigation in a row */
+    gap: 5px;
+  }
+
+  nav a {
+    font-size: 12px; /* ✅ Reduce text size */
+    font-weight:bold;
+  }
+
+  .btn {
+    padding: 7px 5px; /* ✅ Adjust button size */
+    font-size: 10px;
+  }
+
+  .card {
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 8px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  .hero {
+    height: 70vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    /* text-align: center; */
+    padding: 20px;
+  }
+  .hero h1 {
+    font-size: 35px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .contact {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 70px 8%;
+  }
+  
+  .contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .contact input,
+  .contact textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  #footer
+  {
+   text-align: center;
+   font-size: xx-small;
+   color: white;
+   background-color: #222;
+   padding-top: 4px;
+   padding-bottom: 4px;
+  }
+  #send
+  {
+    padding: 10px 13px;
+    margin-top: 10px;
+  } 
+  
+}
