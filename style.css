@@ -235,8 +235,8 @@ nav a:hover {
     transition: transform 0.3s ease-in-out;
   }
   .hero {
-    height: 40vh;
-    width: 100vw;
+    height: 20vh;
+    width: 90vw;
     background: linear-gradient(45deg, #ff416c, #ff4b2b);
     color: white;
     display: flex;
